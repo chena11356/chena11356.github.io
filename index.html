@@ -316,25 +316,32 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Smooth scrolling -->
+    <script>
+      $(document).ready(function () {
+        // Smooth scrolling for navbar links
+        $(".js-scroll-trigger").on("click", function (event) {
+          var target = $(this.getAttribute("href"));
+          if (target.length) {
+            event.preventDefault();
+            $("html, body").stop().animate(
+              {
+                scrollTop: target.offset().top,
+              },
+              800,
+            );
+
+            // Collapse navbar on mobile after clicking
+            $(".navbar-collapse").collapse("hide");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
