@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML, CSS, and JavaScript Demo</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎨 HTML, CSS & JavaScript Demo</h1>
+
+      <!-- HTML Structure Demo -->
+      <div class="demo-section">
+        <h2>1. HTML Structure</h2>
+        <p>
+          This page demonstrates basic HTML elements including headings,
+          paragraphs, buttons, and lists.
+        </p>
+        <ul>
+          <li>Semantic HTML5 elements</li>
+          <li>Forms and inputs</li>
+          <li>Interactive buttons</li>
+        </ul>
+      </div>
+
+      <!-- CSS Styling Demo -->
+      <div class="demo-section">
+        <h2>2. CSS Styling</h2>
+        <p>
+          CSS is used for styling, including gradients, layouts, and hover
+          effects. All styles are in <code>demo.css</code>.
+        </p>
+
+        <h3>CSS Grid Layout</h3>
+        <p>This responsive grid adjusts automatically to screen size:</p>
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item">Item 3</div>
+          <div class="grid-item">Item 4</div>
+        </div>
+
+        <h3>Hover Effects</h3>
+        <p>Hover over the box below to see CSS transitions:</p>
+        <div class="hover-demo">
+          <strong>Hover over me!</strong>
+        </div>
+      </div>
+
+      <!-- JavaScript Interactivity Demo -->
+      <div class="demo-section">
+        <h2>3. JavaScript Interactivity</h2>
+        <p>All JavaScript functionality is in <code>demo.js</code>.</p>
+
+        <!-- Counter Demo -->
+        <h3>Counter</h3>
+        <div id="counter-display">0</div>
+        <div class="button-group">
+          <button class="btn" onclick="incrementCounter()">Increment</button>
+          <button class="btn" onclick="decrementCounter()">Decrement</button>
+          <button class="btn" onclick="resetCounter()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Color Changer Demo -->
+      <div class="demo-section">
+        <h3>Random Color Generator</h3>
+        <div id="color-box">Click the button below!</div>
+        <div class="button-group">
+          <button class="btn" onclick="changeColor()">Change Color</button>
+        </div>
+      </div>
+
+      <!-- Input and Greeting Demo -->
+      <div class="demo-section">
+        <h3>Personalized Greeting</h3>
+        <input type="text" id="name-input" placeholder="Enter your name..." />
+        <button class="btn" onclick="showGreeting()">Greet Me!</button>
+        <div id="greeting-output"></div>
+      </div>
+
+      <!-- Dynamic List Demo -->
+      <div class="demo-section">
+        <h3>Dynamic To-Do List</h3>
+        <input type="text" id="todo-input" placeholder="Enter a task..." />
+        <button class="btn" onclick="addTodo()">Add Task</button>
+        <ul id="dynamic-list"></ul>
+      </div>
+    </div>
+
+    <script src="demo.js"></script>
+  </body>
+</html>
